@@ -1341,6 +1341,14 @@ public class Main extends javax.swing.JFrame {
     private void NewUserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NewUserMouseClicked
         jt_userlogin.setText("");
         pf_pwlogin.setText("");
+        name.setText("Nombre");
+        usuario.setText("Nombre de Usuario");
+        s_edad.setValue(18);
+        Intereses.setText("");
+        Descripcion.setText("");
+        pw.setText("");
+        CPremium.setSelected(false);
+        propic.setIcon(new ImageIcon("./src/lab7_andreamendoza/default-avatar (1).png"));
         NewUser1.pack();
         NewUser1.setLocationRelativeTo(null);
         NewUser1.setVisible(true);
@@ -1429,14 +1437,6 @@ public class Main extends javax.swing.JFrame {
                 NewUser1.setVisible(false);
                 Users.add(U);
                 JOptionPane.showMessageDialog(NewUser1, "¡Usuario creado exitósamente!");
-                name.setText("Nombre");
-                usuario.setText("Nombre de Usuario");
-                s_edad.setValue(18);
-                Intereses.setText("");
-                Descripcion.setText("");
-                pw.setText("");
-                CPremium.setSelected(false);
-                propic.setIcon(new ImageIcon("/lab7_andreamendoza/default-avatar(1).png"));
                 NewUser1.setVisible(false);
                 LogIn.setVisible(true);
             } catch (Exception e) {
